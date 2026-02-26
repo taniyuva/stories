@@ -1,5 +1,10 @@
-/* styles.css */
 
-* {
-	font-family: Arial;
+h1 {
+	font-size: 20em;
+	 color: hotpink; 
+}
+
+p{
+	font-size: 7em;
+	color: magenta; 
 }
