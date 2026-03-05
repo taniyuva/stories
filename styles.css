@@ -1,0 +1,272 @@
+/* Make the page fill the entire viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
+.page {
+    min-height: 100vh;
+    opacity: 0;                  /* start invisible */
+    animation: fadeIn 1s ease forwards; /* fade in */
+}
+
+/* fade-in keyframes */
+@keyframes fadeIn {
+    to {
+        opacity: 10;               /* fade to fully visible */
+    }
+}
+
+
+
+/* Center everything vertically and horizontally */
+body {
+    display: flex;            /* use flexbox */
+    flex-direction: column;   /* stack content vertically */
+    justify-content: center;  /* vertical centering */
+    align-items: center;      /* horizontal centering */
+    text-align: center;       /* center text in headings and paragraphs */
+    font-family: Arial, sans-serif;
+    background-color: #e3fcff; /* optional background */
+}
+
+
+h1 {
+    font-size: 40px;
+    font-family: "Shizuru", system-ui;
+}
+
+p {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px;
+}
+
+.index p {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size:17px;
+}
+
+.road p{
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size:12px;
+}
+
+/* Links inside lists */
+ul li a {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    text-decoration: none; /* optional: remove underline */
+    color: rgb(223, 46, 105)
+
+}
+
+/* Page-specific colors */
+.curious p {
+    color: #ffe8f9;
+}
+
+.adventurous p {
+    color: #d8ecfc;
+}
+
+.relaxed p {
+    color: #ffe8f9;
+}
+
+
+/* curious page styling */
+.curious {
+    background-color: #180a04;
+}
+
+.curious h1 {
+    color: #ffe8f9;
+}
+
+
+
+
+
+.adventurous{
+    background-color: #022926;
+
+}
+
+.adventurous h1 {
+    color: #d8ecfc;
+}
+
+
+
+
+
+
+.relaxed {
+    background: linear-gradient(to bottom, #ff9a8b, #ff6a88, #ffb347);
+}
+
+
+
+h1 {
+  font-family: "Shizuru", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.text {
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+/* First paragraph appears, then disappears */
+.first {
+    animation: firstText 4s ease;
+}
+
+/* Second paragraph appears after the first disappears */
+.second {
+    animation: secondText 5s ease;
+    animation-delay: 4s;
+}
+
+.third {
+    animation: secondText 5s ease;
+    animation-delay: 4s;
+}
+.fourth {
+    animation: secondText 5s ease;
+    animation-delay: 4s;
+}
+
+@keyframes firstText {
+    0%   { opacity: 0; }
+    20%  { opacity: 1; }
+    80%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes secondText {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Remove bullet points and spacing from list */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0; /* optional spacing above list */
+}
+
+/* Space out list items */
+li {
+    margin: 15px 0;
+}
+
+/* Style the links like buttons */
+a {
+    text-decoration: none;
+    color: #d33967;
+    font-size: 20px;
+}
+
+a:hover {
+    color: #e86c1a;
+}
+
+
+.tilted-image {
+    width: 300px;
+    height: 400px;
+    position: absolute;        /* lets you move it freely */
+    right: 70px;               /* move it to the right side */
+    top: 50%;                  /* vertical position */
+    transform: rotate(-5deg) translateY(-70%);
+}
+
+.road-image {
+    width: 300px;
+    height: 400px;
+    position: absolute;        /* lets you move it freely */
+    left: 70px;               /* move it to the right side */
+    top: 50%;                  /* vertical position */
+    transform: rotate(5deg) translateY(-20%);
+}
+
+.passport-image {
+    width: 250px;
+    height: 350px;
+    position: absolute;        /* lets you move it freely */
+    left: 200px;               /* move it to the right side */
+    top: 30%;                  /* vertical position */
+    transform: rotate(-15deg) translateY(-65%);
+}
+
+.crayon-image {
+    width: 250px;
+    height: 350px;
+    position: absolute;        /* lets you move it freely */
+    right: 140px;               /* move it to the right side */
+    top: 65%;                  /* vertical position */
+    transform: rotate(-10deg) translateY(-20%);
+}
+
+.right-justified{
+    width: 300px;
+    height: 400px;
+    position: absolute;        /* lets you move it freely */
+    right: 70px;               /* move it to the right side */
+    top: 50%;                  /* vertical position */
+    transform: rotate(0deg) translateY(-50%);
+
+}
+
+.left-justified{
+    width: 300px;
+    height: 400px;
+    position: absolute;        /* lets you move it freely */
+    left: 70px;               /* move it to the right side */
+    top: 50%;                  /* vertical position */
+    transform: rotate(0deg) translateY(-50%);
+
+}
+
+.horizontal-right-justified{
+    width: 400px;
+    height: 300px;
+    position: absolute;        /* lets you move it freely */
+    right: 70px;               /* move it to the right side */
+    top: 50%;                  /* vertical position */
+    transform: rotate(0deg) translateY(-50%);
+
+}
+
+.horizontal-left-justified{
+    width: 400px;
+    height: 300px;
+    position: absolute;        /* lets you move it freely */
+    left: 70px;               /* move it to the right side */
+    top: 50%;                  /* vertical position */
+    transform: rotate(0deg) translateY(-50%);
+
+}
