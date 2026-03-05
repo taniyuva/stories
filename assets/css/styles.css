@@ -59,7 +59,6 @@ ul li a {
     font-weight: 400;
     text-decoration: none; 
     color: rgb(223, 46, 105)
-
 }
 
 
@@ -115,15 +114,18 @@ h1 {
     animation: firstText 4s ease;
 }
 
+
 .second {
     animation: secondText 5s ease;
     animation-delay: 4s;
 }
 
+
 .third {
     animation: secondText 5s ease;
     animation-delay: 4s;
 }
+
 .fourth {
     animation: secondText 5s ease;
     animation-delay: 4s;
@@ -147,12 +149,10 @@ ul {
     margin: 20px 0 0 0; 
 }
 
-/* Space out list items */
 li {
     margin: 15px 0;
 }
 
-/* Style the links like buttons */
 a {
     text-decoration: none;
     color: #d33967;
